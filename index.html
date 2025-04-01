@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <style>
+    .container {
+      display: flex;
+      flex-direction: row;
+    }
+    .content {
+      flex: 1;
+    }
+  </style>
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  <div class="container">
+    <div id="container-bill" class="content bill">
+      
+    </div>
+    <div id="container-cow" class="content cow">
+      
+    </div>
+  </div>
+  <script src="js/views/CowView.js"></script>
+  <script src="js/views/BillView.js"></script>
+  <script src="js/Controller.js"></script>
+  <script>
+    let controller = new Controller(
+      document.querySelector("#container-bill"),
+      document.querySelector("#container-cow")
+    )
+  </script>
+
+</body>
+</html>
