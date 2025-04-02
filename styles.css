@@ -1,0 +1,181 @@
+/* Global styles and reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+  }
+  
+  body {
+    background-color: #c5e4e7;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Main container */
+  .container {
+    max-width: 920px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .img img {
+    max-width: 100px;
+    height: auto;
+  }
+
+  .content-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+  }
+
+  /* Content wrapper */
+  .content {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Bill section - left side */
+  .bill {
+    flex: 1;
+    min-width: 300px;
+    padding-right: 20px;
+  }
+  
+  .bill h2 {
+    background-color: #00474b;
+    color: white;
+    display: inline-block;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    
+  }
+  
+  .bill input[type="text"],
+  .bill input[type="number"] {
+    width: 100%;
+    height: 40px;
+    background-color: #79c6cf;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 25px;
+    font-size: 16px;
+  }
+  
+  .bill .tip-section {
+    margin: 20px 0;
+  }
+  
+  .bill .select-tip {
+    margin-bottom: 10px;
+    color: #5e7a7d;
+  }
+  
+  .bill .tip-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .bill .tip-option {
+    display: flex;
+    align-items: center;
+  }
+  
+  .bill .tip-option label {
+    background-color: #00474b;
+    color: white;
+    padding: 5px 10px;
+    min-width: 60px;
+    text-align: center;
+    margin-right: 10px;
+  }
+  
+  .bill .number-people {
+    background-color: #00474b;
+    color: white;
+    padding: 5px 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  
+  .bill .calculate-btn {
+    background-color: #ccc;
+    border: 1px solid #999;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  /* Cow section - right side results */
+  .cow {
+    flex: 1;
+    min-width: 300px;
+    background-color: #00474b;
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .cow .amount-row {
+    margin-bottom: 20px;
+  }
+  
+  .cow .label {
+    margin-bottom: 5px;
+  }
+  
+  .cow .per-person {
+    color: #7f9d9f;
+    font-size: 14px;
+  }
+  
+  .cow .amount {
+    color: #26c2ae;
+    font-size: 24px;
+  }
+  
+  .cow .reset-btn {
+    background-color: #e0e0e0;
+    color: #00474b;
+    border: none;
+    padding: 8px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .content {
+      flex-direction: column;
+    }
+    
+    .bill {
+      padding-right: 0;
+      padding-bottom: 20px;
+    }
+  }

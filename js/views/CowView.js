@@ -15,16 +15,16 @@ class CowView {
 
     render() {
         return `
-            <div class="result-item">
-                <p>Tip amount <span>/person</span></p>
-                <span class="value">$${this.calculateTip()}</span>
+            <div class="result-item" >
+                <p style="font-size: 20px; padding-bottom: 0px">Tip amount <span>/person</span></p>
+                <span class="value" style="font-size: 20px">$${this.calculateTip()}</span>
             </div>
             <div class="result-item">
-                <p>Total <span>/person</span></p>
-                <span class="value">$${this.calculateValue()}</span>
+                <p style="font-size: 20px; padding-bottom: 0px">Total <span>/person</span></p>
+                <span class="value"style="font-size: 20px; padding-bottom: 0px">$${this.calculateValue()}</span>
             </div>
 
-            <button class="action">Reset</button>
+            <button class="action" style="font-size: 20px; padding-bottom: 0px">Reset</button>
         `
     }
 }
